@@ -1,6 +1,11 @@
-
 function addToArray(location, element, arr) {
-  // Your code here
+  if (location === "FRONT") {
+    arr.unshift(element);
+  } else if (location === "BACK") {
+    arr.push(element);
+  } else if (location !== "FRONT" && location !== "BACK") {
+    console.log("ERROR");
+  }
 
 }
 
