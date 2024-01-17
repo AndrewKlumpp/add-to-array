@@ -1,6 +1,14 @@
 function fizzBuzz(max) {
-
-}
+  let array = [];
+  for (let i = 0; i < max; i++) {
+    if (i % 3 === 0 && i % 5 !== 0) {
+      array.push(i);
+    } else if (i % 5 === 0 && i % 3 !== 0) {
+      array.push(i);
+    }
+  }
+  return array;
+};
 
 
 
