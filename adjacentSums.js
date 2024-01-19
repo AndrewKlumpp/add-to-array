@@ -1,5 +1,10 @@
 function adjacentSums(arr) {
-
+  let array = [];
+  for (let i = 0; i < arr.length - 1; i++) {
+    let sum = arr[i] + arr[i + 1];
+    array.push(sum);
+  }
+  return array;
 }
 
 console.log(adjacentSums([3, 8, 7, 1]));        // [ 11, 15, 8 ]
