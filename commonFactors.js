@@ -1,6 +1,12 @@
 function commonFactors(num1, num2) {
-
-}
+  let array = [];
+  for (let i = 0; i <= num1; i++) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      array.push(i);
+    }
+  }
+  return array;
+};
 
 console.log(commonFactors(50, 30));            // [1, 2, 5, 10]
 console.log(commonFactors(8, 4));              // [1, 2, 4]
