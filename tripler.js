@@ -1,6 +1,11 @@
 function tripler(nums) {
-
-}
+  let tripled = [];
+  for (let i = 0; i < nums.length; i++) {
+    let num = nums[i];
+    tripled.push(num * 3);
+  }
+  return tripled;
+};
 
 
 
