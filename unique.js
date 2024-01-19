@@ -1,5 +1,13 @@
-// Your code here
-
+function unique(arr) {
+  let array = [];
+  for (let i = 0; i < arr.length; i++) {
+    let char = arr[i];
+    if (!array.includes(char)) {
+      array.push(char);
+    }
+  }
+  return array;
+};
 
 
 console.log(unique([1, 1, 2, 3, 3])); // [1, 2, 3]
