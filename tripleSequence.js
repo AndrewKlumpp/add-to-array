@@ -1,5 +1,16 @@
 function tripleSequence(start, length) {
-  // your code here
+  let array = [];
+
+  if (length === 0) {
+    return array;
+  }
+
+  array.push(start);
+
+  for (let i = 1; i <= length - 1; i++) {
+    array.push(array[i - 1] * 3);
+ }
+ return array;
 }
 
 console.log(tripleSequence(2, 4)); // [2, 6, 18, 54]
