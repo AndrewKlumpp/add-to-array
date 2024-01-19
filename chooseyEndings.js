@@ -1,6 +1,18 @@
 function chooseyEndings(words, ending) {
+  let array = [];
 
-}
+  if (!Array.isArray(words)) {
+    return [];
+  }
+
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (word.endsWith(ending)) {
+      array.push(word);
+    }
+  }
+  return array;
+};
 
 console.log(chooseyEndings(['family', 'hound', 'catalyst','fly', 'timidly', 'bond'], 'ly'));
 // [ 'family', 'fly', 'timidly' ]
