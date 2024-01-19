@@ -1,5 +1,16 @@
 function doubleSequence(base, length) {
+  let array = [];
 
+  if (length === 0) {
+    return array;
+  }
+
+  array.push(base);
+
+  for (let i = 1; i <= length - 1; i++) {
+    array.push(array[i - 1] * 2);
+ }
+ return array;
 }
 
 console.log(doubleSequence(7, 3));  // [7, 14, 28]
