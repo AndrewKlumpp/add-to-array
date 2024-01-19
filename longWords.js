@@ -1,5 +1,12 @@
 function longWords(words) {
-
+  let longs = [];
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    if (word.length > 5) {
+      longs.push(word);
+    }
+  }
+  return longs;
 }
 
 
